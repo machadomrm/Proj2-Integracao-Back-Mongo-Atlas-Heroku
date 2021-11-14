@@ -1,0 +1,26 @@
+{
+  "name": "proj2_integracao_backend_mongoatlas_heroku",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/machadomrm/Proj2-Integracao-Back-Mongo-Atlas-Heroku.git"
+  },
+  "author": "Marcelo da Rocha Machado",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/machadomrm/Proj2-Integracao-Back-Mongo-Atlas-Heroku/issues"
+  },
+  "homepage": "https://github.com/machadomrm/Proj2-Integracao-Back-Mongo-Atlas-Heroku#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^6.0.12"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "description": ""
+}
