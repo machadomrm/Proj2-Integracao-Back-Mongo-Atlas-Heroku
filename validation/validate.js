@@ -8,12 +8,7 @@ class Validate {
 
   static validarPais(info) {
     if (
-      !info ||
-      !info.nome ||
-      !info.populacao ||
-      !info.lingua_mae ||
-      !info.pib
-    ) {
+      !info || !info.nome || !info.populacao || !info.lingua_mae || !info.pib) {
       return false;
     }
     return true;
@@ -21,12 +16,7 @@ class Validate {
 
   static validarEstado(info) {
     if (
-      !info ||
-      !info.nome ||
-      !info.regiao ||
-      !info.populacao ||
-      !info.salario_minimo
-    ) {
+      !info || !info.nome || !info.regiao || !info.populacao || !info.salario_minimo) {
       return false;
     }
     return true;
@@ -34,12 +24,7 @@ class Validate {
 
   static validarCidade(info) {
     if (
-      !info ||
-      !info.nome ||
-      !/\d/.test(info.quantidade_de_bairros) ||
-      !info.populacao ||
-      !info.aniversario_da_cidade
-    ) {
+      !info || !info.nome || !/\d/.test(info.quantidade_de_bairros) || !info.populacao || !info.aniversario_da_cidade) {
       return false;
     }
     return true;
