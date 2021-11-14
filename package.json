@@ -16,6 +16,7 @@
   },
   "homepage": "https://github.com/machadomrm/Proj2-Integracao-Back-Mongo-Atlas-Heroku#readme",
   "dependencies": {
+    "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "mongoose": "^6.0.12"
   },
