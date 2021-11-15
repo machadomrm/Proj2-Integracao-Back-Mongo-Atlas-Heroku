@@ -1,5 +1,5 @@
-const CidadeModel = require("../models/CidadeModel");
-const Validate = require("../validations/Validate");
+const CidadeModel = require("../model/cidade");
+const Validate = require("../validation/validate");
 const moment = require("moment");
 
 class CidadeController {

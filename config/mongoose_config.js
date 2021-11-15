@@ -3,10 +3,14 @@ const { config } = require("dotenv");
 
 //dotenv
 config();
-const db_user = process.env.DB_USER;
-const db_pwd = process.env.DB_PWD;
+
+const db_user = process.env.DB_USER; 
+
+const db_pwd = process.env.DB_PWD; 
+
 const db_database = process.env.DB_DATABASE;
-const db_host = process.env.DB_HOST;
+
+const db_host = process.env.DB_HOST;   
 
 const connectionString = `mongodb+srv://${db_user}:${db_pwd}@${db_host}/${db_database}`;
 

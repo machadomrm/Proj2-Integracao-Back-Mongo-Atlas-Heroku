@@ -1,6 +1,6 @@
-const paisesRoutes = require("./paisesRoutes");
-const estadosRoutes = require("./estadosRoutes");
-const cidadesRoutes = require("./cidadesRoutes");
+const paisesRoutes = require("./paises.route");
+const estadosRoutes = require("./estados.route");
+const cidadesRoutes = require("./cidades.route");
 
 module.exports = (app) => {
   app

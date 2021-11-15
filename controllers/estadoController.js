@@ -1,5 +1,5 @@
-const EstadoModel = require("../models/EstadoModel");
-const Validate = require("../validations/Validate");
+const EstadoModel = require("../model/estado");
+const Validate = require("../validation/validate");
 
 class EstadoController {
   static async adicionar(req, res) {
@@ -58,9 +58,7 @@ class EstadoController {
 
   static async alterar(req, res) {
     if (
-      Validate.validarNome(req.params.nome) ||
-      Validate.validarEstados(req.body)
-    ) {
+      Validate.validarNome(req.params.nome) || Validate.validarEstados(req.body)) {
       try {
         const result = await EstadoModel.alterar(req.params.nome, req.body);
         return res.status(200).json(result);

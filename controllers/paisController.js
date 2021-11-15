@@ -1,5 +1,5 @@
-const PaisModel = require("../models/PaisModel");
-const Validate = require("../validations/Validate");
+const PaisModel = require("../model/pais");
+const Validate = require("../validation/validate");
 
 class PaisController {
   static async adicionar(req, res) {
