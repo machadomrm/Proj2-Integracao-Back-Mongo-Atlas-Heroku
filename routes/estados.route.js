@@ -1,4 +1,4 @@
-const EstadoController = require("../controllers/EstadosController");
+const EstadoController = require("../controllers/estadoController");
 const { Router } = require("express");
 const router = Router();
 

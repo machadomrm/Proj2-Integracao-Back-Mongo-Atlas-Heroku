@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const paisesSchema = new mongoose.Schema({
+const paisSchema = new mongoose.Schema({
     nome:{type:String, required:true},
     populacao:{type:String, required:true},
     lingua_mae:{type:String, required:true},

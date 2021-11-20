@@ -1,4 +1,4 @@
-const Cidades = require("../database/cidadeSchemas");
+const Cidades = require("../database/cidadesSchema");
 
 class CidadeModel {
   static async adicionar(info) {

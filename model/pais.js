@@ -1,4 +1,4 @@
-const Paises = require("../database/paisesSchema");
+const Paises = require("../database/paisSchema");
 
 class PaisesModel {
   static async adicionar(info) {

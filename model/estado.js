@@ -1,5 +1,5 @@
 const { model } = require("mongoose");
-const Estados = require("../database/estadosSchema");
+const Estados = require("../database/estadoSchema");
 
 class EstadosModel {
   static async adicionar(info) {

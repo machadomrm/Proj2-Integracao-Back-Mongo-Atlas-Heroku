@@ -1,4 +1,4 @@
-const PaisController = require("../controllers/PaisesController");
+const PaisController = require("../controllers/paisController");
 const { Router } = require("express");
 const router = Router();
 

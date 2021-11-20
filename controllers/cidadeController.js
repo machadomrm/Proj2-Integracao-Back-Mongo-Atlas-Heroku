@@ -9,7 +9,8 @@ class CidadeController {
         req.body.aniversarioDaCidade = moment(
           req.body.aniversarioDaCidade,
           "DD/MM/YYYY"
-        ).format("YYYY-MM-DD");
+        );
+        let now = moment().format("YYYY-MM-DD");
         await CidadeModel.adicionar(req.body);
         return res.status(201).json({ message: "ADICIONADO" });
       } catch (err) {

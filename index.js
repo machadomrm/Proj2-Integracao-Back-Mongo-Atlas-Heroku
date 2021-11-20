@@ -1,29 +1,32 @@
-const express = require("express");
-const mongoose = require("../Proj2-Integracao-BackEnd_MongoAtlas_Heroku/config/mongoose_config");
-const app = require("../Proj2-Integracao-BackEnd_MongoAtlas_Heroku/config/express_config");
-const app = express();
-const morgan = require("morgan");
-require("dotenv").config();
+// {"esversion": 6}
 
-app.listen(process.env.PORT);
 
-app.use(express.json());
+// const express = require("express");
+// const mongoose = require("../Proj2-Integracao-BackEnd_MongoAtlas_Heroku/config/mongoose_config");
+// const app = require("../Proj2-Integracao-BackEnd_MongoAtlas_Heroku/config/express_config");
+// // const app = express(); // ta com erro, index fica vermelho
+// const morgan = require("morgan");
+// require("dotenv").config();
 
-const port = process.env.PORT || 3000;
+// app.listen(process.env.PORT);
 
-app.get("/", (req, res) => {
-    res.status(200).json({ message: "API Rodando" });
-});
+// app.use(express.json());
 
-const paisesRouter = require("./routes/paises.route");
-app.use("/paises", paisesRouter);
+// const port = process.env.PORT || 3000;
 
-const cidadesRouter = require("./routes/cidades.route");
-app.use("/cidades", cidadesRouter);
+// app.get("/", (req, res) => {
+//   res.status(200).json({ message: "API Rodando" });
+// });
 
-const estadosRouter = require("./routes/estados.route");
-app.use("/estados", estadosRouter);
+// const paisesRouter = require("./routes/paises.route");
+// app.use("/paises", paisesRouter);
 
-app.listen(port, () => {
-    console.log(`Servidor rodando em: http://localhost:${port}`);
-});
+// const cidadesRouter = require("./routes/cidades.route");
+// app.use("/cidades", cidadesRouter);
+
+// const estadosRouter = require("./routes/estados.route");
+// app.use("/estados", estadosRouter);
+
+// app.listen(port, () => {
+//   console.log(`Servidor rodando em: http://localhost:${port}`);
+// });
