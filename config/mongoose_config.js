@@ -21,15 +21,15 @@ mongoose
     useUnifiedTopology: true,
   })
   .then(() => {
-    console.log("CONECTADO AO MONGODB");
+    console.log("CONEXÃO AO MONGODB OK");
   })
   .catch((err) => {
-    console.error({ "FALHA AO CONECTAR COM O MONGODB": err.message });
+    console.error({ "FALHA NA CONEXÃO AO MONGODB": err.message });
   });
 
 //eventos
 mongoose.connection.on("connected", () => {
-  console.log("CONECTADO AO MONGOOSE");
+  console.log("CONEXÃO AO MONGOOSE OK");
 });
 mongoose.connection.on("disconnected", () => {
   console.log("DESCONECTADO DO MONGOOSE");

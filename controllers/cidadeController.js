@@ -12,7 +12,7 @@ class CidadeController {
         );
         let now = moment().format("YYYY-MM-DD");
         await CidadeModel.adicionar(req.body);
-        return res.status(201).json({ message: "ADICIONADO" });
+        return res.status(201).json({ message: "ADICIONADO COM SUCESSO" });
       } catch (err) {
         console.error(err.message);
         return res.status(400).json({ message: "ERRO AO ADICIONAR" });
@@ -20,7 +20,7 @@ class CidadeController {
     } else {
       return res
         .status(400)
-        .json({ message: "INFORMAÇÃO DE CADASTRO INCORRETA" });
+        .json({ message: "INFORMAÇÃO DO CADASTRO INCORRETA" });
     }
   }
 
