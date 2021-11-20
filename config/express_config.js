@@ -2,6 +2,7 @@ const express = require("express");
 const db = require("./mongoose_config");
 const consign = require("consign");
 
+
 class App {
   constructor() {
     this.init = express();
@@ -20,7 +21,7 @@ class App {
   }
 
   routes() {
-    consign({ cwd: "api" }).include("routes/index.js").into(this.init);
+    consign({ cwd: "api" }).include("../routes/index.js").into(this.init);
   }
 }
 
