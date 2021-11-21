@@ -6,6 +6,6 @@ app.listen(app.get("port"), () => {
 });
 
 
-//esse é meu INDEX
+//O INDEX FOI DIVIDIDO P/ SERVER.JS E INDEX.JS QUE ESTÁ DENTRO DE ROUTES
 
 
